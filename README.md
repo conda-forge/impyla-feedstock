@@ -4,7 +4,7 @@ About impyla
 Home: https://github.com/cloudera/impyla
 
 Package license: Apache 2.0
- 
+
 Feedstock license: BSD
 
 Summary: Python client for the Impala distributed query engine
