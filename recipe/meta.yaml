@@ -4,7 +4,7 @@ package:
 
 source:
   fn: impyla-0.13.7.tar.gz
-  url: https://pypi.python.org/packages/source/i/impyla/impyla-0.13.7.tar.gz
+  url: https://pypi.python.org/packages/d3/23/c64eeade2f7997161e490565baa7ccfc37ae314cf6207e3585fe5c9c72e7/impyla-0.13.7.tar.gz
   md5: 331f581a45d48b0482b62d5c67005f8e
 
 build:
