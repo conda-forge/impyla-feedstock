@@ -1,6 +1,6 @@
 package:
   name: impyla
-  version: "0.13.7"
+  version: "0.13.8"
 
 source:
   fn: impyla-0.13.8.tar.gz
