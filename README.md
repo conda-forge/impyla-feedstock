@@ -11,6 +11,18 @@ Summary: Python client for the Impala distributed query engine
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/impyla-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/impyla-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/impyla-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/impyla-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/impyla-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/impyla-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/impyla/badges/version.svg)](https://anaconda.org/conda-forge/impyla)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/impyla/badges/downloads.svg)](https://anaconda.org/conda-forge/impyla)
+
 Installing impyla
 =================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/impyla-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/impyla-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/impyla-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/impyla-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/impyla-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/impyla-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/impyla/badges/version.svg)](https://anaconda.org/conda-forge/impyla)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/impyla/badges/downloads.svg)](https://anaconda.org/conda-forge/impyla)
 
 
 Updating impyla-feedstock
