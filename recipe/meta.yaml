@@ -1,4 +1,4 @@
-{% set version = "0.14.1" %}
+{% set version = "0.14.2.2" %}
 
 package:
   name: impyla
@@ -7,10 +7,10 @@ package:
 source:
   fn: impyla-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/i/impyla/impyla-{{ version }}.tar.gz
-  md5: 4d9383ede4b0c36850fbec662c171bce
+  md5: 6a794220eaf88260c6b9c2908106c48e
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
