@@ -9,7 +9,7 @@ source:
   sha256: 7c118938d00ad632871baabcd76fe56ebac08576117d49c8a770d7def3c08174
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - thriftpy >=0.3.9
     - thriftpy2 >=0.4.0,<0.5.0  # [py3k]
     - thrift  # [py2k]
+    - thrift_sasl >=0.2.1
 
 test:
   imports:
