@@ -1,4 +1,4 @@
-{% set version = "0.16.2" %}
+{% set version = "0.16.3" %}
 
 package:
   name: impyla
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/i/impyla/impyla-{{ version }}.tar.gz
-  sha256: 7c118938d00ad632871baabcd76fe56ebac08576117d49c8a770d7def3c08174
+  sha256: 3fb9a38725cd471833146633aaa9f8916d64035796e7b8dfc6f5a392bef5f184
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/cloudera/impyla
   license: Apache-2.0
   license_file: LICENSE.txt
-  summary: 'Python client for the Impala distributed query engine'
+  summary: Python client for the Impala distributed query engine
 
 extra:
   recipe-maintainers:
