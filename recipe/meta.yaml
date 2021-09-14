@@ -10,16 +10,15 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=2
+    - python
     - pip
     - setuptools
   run:
-    - python >=2
+    - python
     - six
     - bitarray
     - thriftpy >=0.3.9
