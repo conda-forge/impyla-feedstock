@@ -11,20 +11,20 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.6
     - six
     - bitarray
     - thriftpy >=0.3.9
-    - thriftpy2 >=0.4.0,<0.5.0  # [py3k]
-    - thrift  # [py2k]
+    - thriftpy2 >=0.4.0,<0.5.0
     - thrift_sasl >=0.2.1
 
 test:
