@@ -1,7 +1,8 @@
+{% set name = "impyla" %}
 {% set version = "0.17.0" %}
 
 package:
-  name: impyla
+  name: {{ name }}
   version: {{ version }}
 
 source:
