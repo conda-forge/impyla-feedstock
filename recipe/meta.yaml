@@ -10,7 +10,7 @@ source:
   sha256: 2e44c8f594d75f40706394aa300c1f1f93ffa592b37b6e2bd02e0396a9443306
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,15 +23,19 @@ requirements:
     - python >=3.6
     - six
     - bitarray
-    - thriftpy >=0.3.9
-    - thriftpy2 >=0.4.0,<0.5.0
-    - thrift_sasl >=0.2.1
+    - thrift >=0.11.0
+    - thrift_sasl >=0.4.2
 
 test:
   imports:
     - impala
     - impala.tests
     - impala.thrift
+  requires:
+    - pip
+  commands:
+    # Disabled for now since we override these dependencies
+    # - pip check
 
 about:
   home: https://github.com/cloudera/impyla
