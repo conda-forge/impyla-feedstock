@@ -34,7 +34,8 @@ test:
   requires:
     - pip
   commands:
-    - pip check
+    # Disabled for now since we override these dependencies
+    # - pip check
 
 about:
   home: https://github.com/cloudera/impyla
