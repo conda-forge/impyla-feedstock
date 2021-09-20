@@ -10,7 +10,7 @@ source:
   sha256: 2e44c8f594d75f40706394aa300c1f1f93ffa592b37b6e2bd02e0396a9443306
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -25,6 +25,8 @@ requirements:
     - bitarray
     - thrift >=0.11.0
     - thrift_sasl >=0.4.2
+    # TODO: see https://github.com/cloudera/impyla/issues/471
+    - pure-sasl
 
 test:
   imports:
@@ -48,3 +50,4 @@ extra:
     - mariusvniekerk
     - wesm
     - kszucs
+    - cpcloud
