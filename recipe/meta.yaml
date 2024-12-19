@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/impyla-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/impyla-{{ version }}.tar.gz
   sha256: 729b0067e90a20204d5fb9d11822214964e298dc8c11e4d142c11a367720ea4f
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6,<3.12
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6,<3.12
+    - python >={{ python_min }},<3.12
     - six 
     - bitarray 
     - thrift ==0.16.0
@@ -38,6 +38,7 @@ test:
     - impala.thrift
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     # Disabled for now since we override these dependencies
     # - pip check
