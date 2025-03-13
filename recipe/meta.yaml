@@ -1,5 +1,5 @@
 {% set name = "impyla" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/impyla-{{ version }}.tar.gz
-  sha256: 78f7e4538f8baa539a58fbd6bd100a57ee15854b352db2df6de7eb71b3798e76
+  sha256: 55d8c14454d9f18452ea9b4b0e81dca04d9fa0b9a9759b99bed9d6197d1f8292
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - pure-sasl
     # - thrift-sasl ==0.4.3
     # - kerberos >=1.3.0
+    # - python-kerberos >=1.3.0
     # - python-kerberos >=1.3.0
     # - python-kerberos >=1.3.0
 
